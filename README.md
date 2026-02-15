@@ -19,6 +19,20 @@ TaskFlow API allows developers to:
 ---
 
 ## Documentation Structure
+## Postman Collection
+
+You can test the API using the exported Postman collection:
+
+1. Download the collection from the `postman/` folder.
+2. Open Postman.
+3. Click Import.
+4. Select the JSON file.
+5. Run requests directly.
+
+This collection includes:
+- GET /tasks
+- POST /tasks
+- PUT /tasks/{id}
 
 - API-Reference.md → Complete endpoint definitions
 - Authentication.md → Token-based authentication guide
