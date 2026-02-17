@@ -21,6 +21,27 @@ When a user adds a new task, the application sends a request to the TaskFlow API
 
 ### Example Request
 POST /tasks
+## Use Case 2: Updating Task Status
+
+### Scenario
+A user completes a task in a productivity application and marks it as finished.
+
+The application updates the task status using the TaskFlow API.
+
+### API Workflow
+1. The application already has the task ID from a previous request.
+2. The user marks the task as completed.
+3. The application sends a PUT request with the updated status.
+4. The API updates the task and returns the modified task data.
+
+### Example Request
+PUT /tasks/{task_id}
+
+```json
+{
+  "status": "completed"
+}
+
 
 ```json
 {
