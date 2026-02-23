@@ -50,9 +50,9 @@ PUT /tasks/{task_id}
 }
 
 
-## Use Case 3: Error Recovery and Invalid Requests
+ Use Case 3: Error Recovery and Invalid Requests
 
-### Scenario
+ Scenario
 A developer integrates the TaskFlow API into an application.
 During usage, the application sends an invalid request or references a task that does not exist.
 
@@ -60,17 +60,17 @@ The API responds with an error, and the application must handle it gracefully.
 
 ---
 
-### Scenario A: Updating a Non-Existent Task
+Scenario A: Updating a Non-Existent Task
 
-#### Problem
+ Problem
 The application attempts to update a task using an incorrect or deleted task ID.
 
-#### API Workflow
+ API Workflow
 1. Application sends a PUT request with an invalid task ID.
 2. The API cannot find the task.
 3. The API returns a 404 Not Found error.
 
-#### Example Request
+ Example Request
 PUT /tasks/invalid_task_id
 
 ```json
