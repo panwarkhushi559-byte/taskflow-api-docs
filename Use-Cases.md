@@ -48,6 +48,7 @@ PUT /tasks/{task_id}
   "title": "Finish project documentation",
   "priority": "high"
 }
+
 ## Use Case 3: Error Recovery and Invalid Requests
 
 ### Scenario
