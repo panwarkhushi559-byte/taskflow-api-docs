@@ -82,3 +82,7 @@ You are now ready to interact with the TaskFlow API using:
 - POST to create tasks
 - PUT to update tasks
 - DELETE to remove tasks (if supported)
+
+## How the TaskFlow API Works
+
+![TaskFlow API Flow](images/Screenshot 2026-02-24 184500.png)
