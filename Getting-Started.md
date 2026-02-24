@@ -2,54 +2,25 @@
 
 This guide walks you through making your first request to the TaskFlow API.
 
----
+## API Environment
 
-## Prerequisites
+The TaskFlow API used in this documentation is a **sample API created for documentation and demonstration purposes**.
 
-Before you begin, make sure you have:
-
-- An API client (Postman recommended)
-- A valid API key
-- Internet connection
-
----
+The endpoints, requests, and responses represent realistic API behavior, but the service is not publicly hosted.
 
 ## Base URL
 
-All API requests should be made to:
+Example base URLs used in this documentation:
 
+**Production (example):**
 https://api.taskflow.dev/v1
-
----
-
-## Step 1: Set Up Authorization
-
-Every request must include your API key in the Authorization header.
-
-Authorization: Bearer YOUR_API_KEY
-
-In Postman:
-1. Open your request
-2. Go to the Headers tab
-3. Add:
-   Key: Authorization
-   Value: Bearer YOUR_API_KEY
-
----
+**Local development (example):**
+http://localhost:3000
+> These URLs are illustrative and may vary based on deployment.
 
 ## Step 2: Make Your First Request
-
-### Example: Retrieve All Tasks
-
-Method: GET  
-Endpoint: /tasks  
-
-Full URL:
-https://api.taskflow.dev/v1/tasks
-
----
-
-## Example Response
+The following examples demonstrate request structure and expected responses using sample data.
+## Example Response (Sample)
 
 [
   {
@@ -59,30 +30,4 @@ https://api.taskflow.dev/v1/tasks
     "status": "pending"
   }
 ]
-
----
-
-## Step 3: Create a Task
-
-Method: POST  
-Endpoint: /tasks  
-
-Body (JSON):
-
-{
-  "title": "Prepare project portfolio",
-  "priority": "medium"
-}
-
----
-## You're Ready
-
-You are now ready to interact with the TaskFlow API using:
-- GET to retrieve tasks
-- POST to create tasks
-- PUT to update tasks
-- DELETE to remove tasks (if supported)
-
-## How the TaskFlow API Works
-
-![TaskFlow API Flow](images/Screenshot 2026-02-24 184500.png)
+![TaskFlow API Flow](images/taskflow-api-overview.png)
