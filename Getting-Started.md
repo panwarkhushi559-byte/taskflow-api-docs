@@ -75,7 +75,9 @@ Body (JSON):
 }
 
 ---
+## How the TaskFlow API Works
 
+![TaskFlow API Flow](images/taskflow-api-overview.png)
 ## You're Ready
 
 You are now ready to interact with the TaskFlow API using:
